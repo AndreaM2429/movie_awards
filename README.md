@@ -1,5 +1,26 @@
 # Movie Awards 2021
 
+# 📗 Table of Contents
+
+- [📗 Table of Contents](#-table-of-contents)
+- [Final Capstone Front-End | Gourmet Experience App](#final-capstone-front-end--gourmet-experience-app)
+  - [🛠 Built With ](#-built-with-)
+    - [Tech Stack ](#tech-stack-)
+    - [Key Features ](#key-features-)
+  - [🚀 Back-End Project  ](#-back-end-project--)
+  - [💻 Getting Started ](#-getting-started-)
+    - [Setup](#setup)
+    - [Prerequisites](#prerequisites)
+    - [Install](#install)
+    - [Usage](#usage)
+    - [Testing](#testing)
+    - [Build](#build)
+  - [👥 Authors ](#-authors-)
+  - [🔭 Future Features ](#-future-features-)
+  - [🤝 Contributing ](#-contributing-)
+  - [⭐️ Show your support ](#️-show-your-support-)
+  - [🙏 Acknowledgments ](#-acknowledgments-)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
