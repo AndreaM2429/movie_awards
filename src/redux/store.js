@@ -3,7 +3,7 @@ import awardsReducer from './slices/awards';
 
 const store = configureStore({
   reducer: {
-    awards: awardsReducer,
+    movies: awardsReducer,
   },
 });
 

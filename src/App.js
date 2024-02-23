@@ -1,11 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { getMoviesInfo } from './redux/slices/awards';
 
 function App() {
+  const { movies } = useSelector((state) => state.movies);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getMoviesInfo());
+  }, [dispatch]);
+
+  console.log(movies);
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit
           {' '}
