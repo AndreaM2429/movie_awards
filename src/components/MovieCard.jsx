@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 function MovieCard({ MoviesArr }) {
   return (
-    <div>
+    <div className="card-div d-col center">
       <h2>{MoviesArr.title}</h2>
       <img src={MoviesArr.poster_img} alt={MoviesArr.title} />
       <button type="button">Details</button>

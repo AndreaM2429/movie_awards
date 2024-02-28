@@ -12,16 +12,16 @@ function Movies() {
   }, [dispatch]);
 
   return (
-    <main>
-      <header>
+    <section className="d-col center">
+      <header className="title">
         <h1>Movies</h1>
       </header>
-      <section>
+      <div className="d-row movies-div center">
         {movies.map((movie) => (
           <MovieCard key={movie.title} MoviesArr={movie} />
         ))}
-      </section>
-    </main>
+      </div>
+    </section>
   );
 }
 
