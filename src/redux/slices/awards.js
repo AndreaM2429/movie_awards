@@ -19,6 +19,22 @@ const initialState = {
   error: null,
 };
 
+const setKeys = (moviesArr) => {
+  const keys = Object.keys(moviesArr[0]);
+  const movies = moviesArr.map((movie) => ({
+    title: movie[keys[0]],
+    year: movie[keys[1]],
+    movie_id: movie[keys[2]],
+    rank: movie[keys[3]],
+    actors: movie[keys[4]],
+    aka: movie[keys[5]],
+    url: movie[keys[6]],
+    iv: movie[keys[7]],
+    poster_img: movie[keys[8]],
+  }));
+  return movies;
+};
+
 const awardSlice = createSlice({
   name: 'awards',
   initialState,
@@ -27,7 +43,7 @@ const awardSlice = createSlice({
       .addCase(getMoviesInfo.fulfilled, (state, action) => {
         state.status = 'Succeeded';
         const info = action.payload.data.description;
-        state.movies = info;
+        state.movies = setKeys(info);
       });
   },
 });
